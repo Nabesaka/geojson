@@ -86,7 +86,7 @@ class Feature extends GeoJson
      *
      * @return bool
      */
-    public function addProperty($prop)
+    public function addProperty($prop = array())
     {
         $this->properties = array_merge($this->properites, $prop);
         return true;
