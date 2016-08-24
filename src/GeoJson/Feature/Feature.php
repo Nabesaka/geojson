@@ -82,6 +82,17 @@ class Feature extends GeoJson
     }
 
     /**
+     * Add a property to the properties array
+     *
+     * @return bool
+     */
+    public function addProperty($prop)
+    {
+        $this->properties = array_merge($this->properites, $prop);
+        return true;
+    }
+
+    /**
      * @see http://php.net/manual/en/jsonserializable.jsonserialize.php
      */
     public function jsonSerialize()
